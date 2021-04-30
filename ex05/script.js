@@ -5,6 +5,7 @@ title.style.fontSize = '45px';
 let subtitle = document.getElementById('subtitle');
 subtitle.innerText = 'Trilogia';
 subtitle.style.color = 'blue';
+subtitle.style.color = 'blue';
 subtitle.style.fontSize = '30px';
 subtitle.style.fontStyle = 'oblique';
 let paragraphsClass = document.getElementsByClassName('paragraphs');
