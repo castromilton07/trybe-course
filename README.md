@@ -1,7 +1,7 @@
 # **Trybe Exemples Presented Repository of the Didactical Content on Course** :rocket:
 
 ## _Description:_
-#### Repository created to store the examples presented in the live classes during the Web Development training at Trybe.
+#### Repository created to store the examples presented in the course platform during the Web Development training at Trybe.
 
 ## _User info:_ :man:
 ### Student Person :green_heart:
