@@ -1,9 +1,3 @@
-const divUm = document.getElementById('divUm');
-const divDois = document.getElementById('divDois');
-const divTres = document.getElementById('divTres');
-const input = document.getElementById('input');
-const myWebpage = document.getElementById('mySpotrybefy');
-
 /*
 1. Copie esse arquivo e edite apenas ele;
 
@@ -22,6 +16,38 @@ a cor do mesmo;
 
 Segue abaixo um exemplo do uso de event.target:
 */
+
+const divUm = document.getElementById('divUm');
+const divDois = document.getElementById('divDois');
+const divTres = document.getElementById('divTres');
+const input = document.getElementById('input');
+const myWebpage = document.getElementById('mySpotrybefy');
+
+divDois.className = 'techa';
+
+
+// Ex. 01
+function addClassTech(event) {
+    if (event.target.id === 'divUm') {
+        event.target.className = 'tech';
+        divDois.removeAttribute('class');
+        divTres.removeAttribute('class');
+    }
+    if (event.target.id === 'divDois') {
+        event.target.className = 'tech';
+        divUm.removeAttribute('class');
+        divTres.removeAttribute('class');
+    }
+    if (event.target.id === 'divTres') {
+        event.target.className = 'tech';
+        divUm.removeAttribute('class');
+        divDois.removeAttribute('class');
+    }
+    
+}
+divUm.addEventListener('click', addClassTech);
+divDois.addEventListener('click', addClassTech);
+divTres.addEventListener('click', addClassTech);
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
