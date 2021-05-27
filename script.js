@@ -88,3 +88,26 @@ function findMusic(id) {
 }
 
 // console.log(findMusic('31031685'))
+
+// Exemplo 8
+
+const listNames = ['Maria', 'Manuela', 'Jorge', 'Ricardo', 'Wilson'];
+
+const verifyFirstLetter = (letter, names) => names.some((name) => name[0] === letter);
+
+// console.log(verifyFirstLetter('J', listNames));
+// console.log(verifyFirstLetter('x', listNames));
+
+// EXemplo 9
+
+const grades = {
+  portugues: 'Aprovado',
+  matematica: 'Reprovado',
+  ingles: 'Aprovado',
+};
+
+const verifyGrades2 = (studentGrades) => (
+  Object.values(studentGrades).every((grade) => grade === 'Aprovado')
+);
+
+// console.log(verifyGrades2(grades));
