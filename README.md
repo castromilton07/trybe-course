@@ -1,37 +1,40 @@
-Trybe Exemples Presented Repository of the Didactical Content on Course rocket
-Description:
-Repository created to store the examples presented in the course platform during the Web Development training at Trybe.
-User info: man
-Student Person green_heart
-Milton Castro - Class SD-12 [Turma 12] mortar_board
-Curricular Structure: computer
-1. Fundamentals Of Web Development
+# **Trybe Exemples Presented Repository of the Didactical Content on Course** :rocket:
 
-[ heavy_check_mark ] - Unish & Bash
-[ heavy_check_mark ] - Git & GitHub
-[ heavy_check_mark ] - HTML & CSS
-[ star ] - JavaScrip & DOM
-[ x ] - Advanced HTML & CSS
-[ x ] - Advanced JavaScript & Tests
-2. Front-end Development
+## _Description:_
+#### Repository created to store the examples presented in the course platform during the Web Development training at Trybe.
 
-[ x ] - SQL and NoSQL Databases
-[ x ] - Node & Express.JS
-[ x ] - MVC, API & REST
-[ x ] - JWT & File Upload
-[ x ] - Deploy: Heroku
-[ x ] - SOLID, ORM & DDD
-3. Back-end Development
+## _User info:_ :man:
+### Student Person :green_heart:
+#### Milton Castro - Class SD-12 [Turma 12]  :mortar_board:
 
-[ x ] - Introduction to React
-[ x ] - Components, States & Events
-[ x ] - Life Cycle & Router
-[ x ] - Tests with RTL
-[ x ] - Redux on React
-[ x ] - Context API & React Hooks
-4. Computer Science
+## _Curricular Structure:_ :computer:
 
-[ x ] - Python & OPP
-[ x ] - Algorithms
-[ x ] - Data Structures
-[ x ] - Problems Resolutions
+**1. Fundamentals Of Web Development**
+- [ :heavy_check_mark: ] - _Unish & Bash_
+- [ :heavy_check_mark: ] - _Git & GitHub_
+- [ :heavy_check_mark: ] - _HTML & CSS_
+- [ :star: ] - **JavaScrip & DOM**
+- [ :x: ] - _Advanced HTML & CSS_
+- [ :x: ] - _Advanced JavaScript & Tests_
+
+**2. Front-end Development**
+- [ :x: ] - _SQL and NoSQL Databases_
+- [ :x: ] - _Node & Express.JS_
+- [ :x: ] - _MVC, API & REST_
+- [ :x: ] - _JWT & File Upload_
+- [ :x: ] - _Deploy: Heroku_
+- [ :x: ] - _SOLID, ORM & DDD_
+
+**3. Back-end Development**
+- [ :x: ] - _Introduction to React_
+- [ :x: ] - _Components, States & Events_
+- [ :x: ] - _Life Cycle & Router_
+- [ :x: ] - _Tests with RTL_
+- [ :x: ] - _Redux on React_
+- [ :x: ] - _Context API & React Hooks_
+
+**4. Computer Science**
+- [ :x: ] - _Python & OPP_
+- [ :x: ] - _Algorithms_
+- [ :x: ] - _Data Structures_
+- [ :x: ] - _Problems Resolutions_
