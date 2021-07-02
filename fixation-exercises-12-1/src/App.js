@@ -16,16 +16,18 @@ class App extends React.Component {
     console.log('Componente sendo construído...');
   }
   
-  handleClick() {
+  handleClick(numClicks) {
     console.log(this);
     console.log('Clicou!');
+    console.log(numClicks + 1);
+    if ((numClicks + 1) % 2 === 0) console.log('verde');
     this.setState((estadoAnterior, _props) => ({
       numeroDeCliques: estadoAnterior.numeroDeCliques + 1,
     }))
   }
 
   render() {
-    return <button onClick={this.handleClick}>Number of Clicks: {this.state.numeroDeCliques}</button>
+    return <button onClick={ () => this.handleClick(this.state.numeroDeCliques) }>Number of Clicks: {this.state.numeroDeCliques}</button>
   }
 }
 
