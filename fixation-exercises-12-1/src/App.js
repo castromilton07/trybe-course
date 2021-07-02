@@ -25,7 +25,7 @@ class App extends React.Component {
   }
 
   render() {
-    return <button onClick={this.handleClick}>{this.state.numeroDeCliques}</button>
+    return <button onClick={this.handleClick}>Number of Clicks: {this.state.numeroDeCliques}</button>
   }
 }
 

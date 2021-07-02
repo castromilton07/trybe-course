@@ -1,25 +1,45 @@
 import React from 'react';
 import './FancyButtons.css';
 
-function clickButton1() {
-  console.log('É genial festejar o sucesso, mas é mais importante aprender com as lições do fracasso.');
-}
-
-function clickButton2() {
-  console.log('Você pode encarar um erro como uma besteira a ser esquecida ou como um resultado que aponta uma nova direção.');
-}
-
-function clickButton3() {
-  console.log('As vezes é importante parar de sonhar, e acordar.');
-}
-
 class FancyButtons extends React.Component {
+  constructor(props) {
+    super();
+    
+    this.clickButton1 = this.clickButton1.bind(this);
+    this.clickButton2 = this.clickButton2.bind(this);
+    this.clickButton3 = this.clickButton3.bind(this);
+
+    this.state = {
+      numClicksButn1: 0,
+      numClicksButn2: 0,
+      numClicksButn3: 0,
+    }
+  };
+
+  clickButton1() {
+    this.setState((prevState, _props) => ({
+      numClicksButn1: prevState.numClicksButn1 + 1,
+    }))
+  };
+
+  clickButton2() {
+    this.setState((prevState, _props) => ({
+      numClicksButn2: prevState.numClicksButn2 + 2,
+    }))
+  };
+
+  clickButton3() {
+    this.setState((prevState, _props) => ({
+      numClicksButn3: prevState.numClicksButn3 + 3,
+    }))
+  };
+  
   render() {
     return (
       <>
-        <button onClick={clickButton1}>Bill Gates</button>
-        <button onClick={clickButton2}>Jeff Bezos</button>
-        <button onClick={clickButton3}>Larry Page</button>
+        <button onClick={this.clickButton1}>Bill Gates: {this.state.numClicksButn1}</button>
+        <button onClick={this.clickButton2}>Jeff Bezos: {this.state.numClicksButn2}</button>
+        <button onClick={this.clickButton3}>Larry Page: {this.state.numClicksButn3}</button>
       </>
     );
   }

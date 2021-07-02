@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-// import FancyButtons from './FancyButtons'
+import FancyButtons from './FancyButtons'
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <FancyButtons /> */}
+    <FancyButtons />
   </React.StrictMode>,
   document.getElementById('root')
 );
