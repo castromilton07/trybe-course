@@ -7,20 +7,25 @@ import './App.css';
 } */
 
 class App extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
     this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      numeroDeCliques: 0,
+    }
     console.log('Componente sendo construído...');
   }
   
   handleClick() {
     console.log(this);
     console.log('Clicou!');
+    this.setState((estadoAnterior, _props) => ({
+      numeroDeCliques: estadoAnterior.numeroDeCliques + 1,
+    }))
   }
 
   render() {
-    console.log(this);
-    return <button onClick={this.handleClick}>Meu botão</button>
+    return <button onClick={this.handleClick}>{this.state.numeroDeCliques}</button>
   }
 }
 
