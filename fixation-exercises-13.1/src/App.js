@@ -1,11 +1,13 @@
+import React from 'react';
 import './App.css';
+import DadJoke from './DadJoke';
 
-function App() {
-  return (
-    <div className="App">
-      Hello World!!
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <DadJoke />
+    );
+  }
 }
 
 export default App;
